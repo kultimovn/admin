@@ -1,0 +1,24 @@
+  <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Фамилия:</strong>
+  <%= @address.title %>
+</p>
+
+<p>
+  <strong>Имя:</strong>
+  <%= @address.city %>
+</p>
+
+<p>
+  <strong>Должность:</strong>
+  <%= @address.street %>
+</p>
+
+<p>
+  <strong>Подразделение:</strong>
+  <%= @address.home %>
+</p>
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>
